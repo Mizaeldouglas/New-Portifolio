@@ -7,8 +7,7 @@ import HomeHero from '../components/HomeHero';
 import { Project } from '../components/Project';
 import { getPrismicClient } from '../services/prismic';
 import 'aos/dist/aos.css';
-// eslint-disable-next-line import/order
-import Head from 'next/head';
+import { Head } from 'next/document';
 
 interface IProjeto {
   slug: string;
@@ -28,19 +27,7 @@ export default function Home({ projetos }: HomeProps) {
   return (
     <HomeContainer>
       <Head>
-        <title>Home | Meu portfólio</title>
-        <meta
-          name="description"
-          content="Sou um desenvolvedor Full-stack e aqui apresento alguns projetos desenvolvidos por mim!"
-        />
-        <meta property="og:image" content="/ogimage.png" />
-        <meta property="og:image:secure_url" content="/ogimage.png" />
-        <meta name="twitter:image" content="/ogimage.png" />
-        <meta name="twitter:image:src" content="/ogimage.png" />
-        <meta
-          property="og:description"
-          content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
-        />
+        <title>Mizael</title>
       </Head>
       <main className="container">
         <HomeHero />

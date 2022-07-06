@@ -20,7 +20,7 @@ export default function Projetos({ projetos }: ProjetosProps) {
   return (
     <ProjetosContainer>
       <Head>
-        <title>Projetos | Meu portfólio</title>
+        <title>{projetos.title} | Meu portfólio</title>
         <meta
           name="description"
           content="Sou um desenvolvedor Full-stack e aqui apresento alguns projetos desenvolvidos por mim!"

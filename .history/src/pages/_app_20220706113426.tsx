@@ -9,13 +9,7 @@ import theme from '../styles/theme';
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <NextNProgress
-        color={theme.primary}
-        startPosition={0.3}
-        stopDelayMs={200}
-        height={3}
-        showOnShallow
-      />
+      <NextNProgress />
       <Header />
       <Component {...pageProps} />
       <GlobalStyles />

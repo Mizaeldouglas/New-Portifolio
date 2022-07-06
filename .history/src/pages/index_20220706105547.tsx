@@ -1,9 +1,14 @@
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import { HomeContainer } from '../styles/HomeStyles';
+import HomeHero from '../components/HomeHero';
+import { Project } from '../components/Project';
+import { getPrismicClient } from '../services/prismic';
+import 'aos/dist/aos.css';
+// eslint-disable-next-line import/order
 import Head from 'next/head';
-import { ProjectItem } from '../../components/ProjectItem';
-import { getPrismicClient } from '../../services/prismic';
-import { ProjetosContainer } from '../../styles/ProjetosStyles';
 
 interface IProjeto {
   slug: string;
@@ -12,18 +17,21 @@ interface IProjeto {
   description: string;
   thumbnail: string;
 }
-interface ProjetosProps {
+interface HomeProps {
   projetos: IProjeto[];
 }
 
-export default function Projetos({ projetos }: ProjetosProps) {
+export default function Home({ projetos }: HomeProps) {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <ProjetosContainer>
+    <HomeContainer>
       <Head>
-        <title>Projetos | Meu portfólio</title>
+        <title>Home | Meu portfólio</title>
         <meta
           name="description"
-          content="Sou um desenvolvedor Full-stack e aqui apresento alguns projetos desenvolvidos por mim!"
+          content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
         />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />
@@ -35,16 +43,10 @@ export default function Projetos({ projetos }: ProjetosProps) {
         />
       </Head>
       <main className="container">
-        {projetos.map(projeto => (
-          <ProjectItem
-            title={projeto.title}
-            type={projeto.type}
-            slug={projeto.slug}
-            imgUrl={projeto.thumbnail}
-          />
-        ))}
+        <HomeHero />
+        <Project projetos={projetos} />
       </main>
-    </ProjetosContainer>
+    </HomeContainer>
   );
 }
 

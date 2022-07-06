@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 import { BannerProjeto } from '../../../components/BannerProjeto';
 import { getPrismicClient } from '../../../services/prismic';
 import { ProjectContainer } from '../../../styles/ProjectStyles';
@@ -25,18 +24,6 @@ export default function Project({ projeto }: ProjetosProps) {
   }
   return (
     <ProjectContainer>
-      <Head>
-        <title>{projeto.title} | Meu portfólio</title>
-        <meta name="description" content={projeto.description} />
-        <meta property="og:image" content={projeto.thumbnail} />
-        <meta property="og:image:secure_url" content={projeto.thumbnail} />
-        <meta name="twitter:image" content={projeto.thumbnail} />
-        <meta name="twitter:image:src" content={projeto.thumbnail} />
-        <meta
-          property="og:description"
-          content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
-        />
-      </Head>
       <BannerProjeto
         title={projeto.title}
         type={projeto.type}

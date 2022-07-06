@@ -50,7 +50,6 @@ export default class MyDocument extends Document {
 
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

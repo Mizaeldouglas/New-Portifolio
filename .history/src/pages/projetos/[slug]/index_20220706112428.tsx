@@ -27,11 +27,14 @@ export default function Project({ projeto }: ProjetosProps) {
     <ProjectContainer>
       <Head>
         <title>{projeto.title} | Meu portfólio</title>
-        <meta name="description" content={projeto.description} />
-        <meta property="og:image" content={projeto.thumbnail} />
-        <meta property="og:image:secure_url" content={projeto.thumbnail} />
-        <meta name="twitter:image" content={projeto.thumbnail} />
-        <meta name="twitter:image:src" content={projeto.thumbnail} />
+        <meta
+          name="description"
+          content="Sou um desenvolvedor Full-stack e aqui apresento alguns projetos desenvolvidos por mim!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
         <meta
           property="og:description"
           content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
