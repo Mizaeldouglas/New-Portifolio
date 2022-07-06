@@ -11,7 +11,7 @@ export const Container = styled.section`
   > img {
     width: 40rem;
     flex: 1;
-    border-radius: 25%;
+    border-top-right-radius: 30%;
   }
 
   > div {

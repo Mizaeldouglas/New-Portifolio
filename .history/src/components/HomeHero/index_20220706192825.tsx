@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Container, TextContainer } from './styles';
-import image from '../../assets/Mizael-4.png';
+import image from '../../assets/Mizael-5.png';
 import { InfoArea } from '../InfoArea';
 import { OfficeArea } from '../OfficeArea';
 
