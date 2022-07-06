@@ -1,0 +1,26 @@
+{
+  "id": "currirculos",
+  "label": "currirculos",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "curriculo": {
+        "type": "Link",
+        "config": {
+          "label": "Curriculo",
+          "placeholder": "",
+          "select": "media"
+        }
+      },
+      "currirculos": {
+        "type": "Link",
+        "config": {
+          "label": "Currirculos",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}
