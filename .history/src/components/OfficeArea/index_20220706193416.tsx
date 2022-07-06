@@ -8,22 +8,22 @@ export function OfficeArea() {
         <span className="comment">// Meus Conhecimentos</span>
         <span className="purple">FullStack: </span> {'\u007B'}
         <div>
-          technology: <span className="blue">React Js;</span>
+          technology: <span className="blue">React Js,</span>
         </div>
         <div>
-          technology: <span className="blue">Next Js;</span>
+          technology: <span className="blue">Next Js,</span>
         </div>
         <div>
-          technology: <span className="blue">React-Native;</span>
+          technology: <span className="blue">React-Native,</span>
         </div>
         <div>
-          technology: <span className="blue">Node Js;</span>
+          technology: <span className="blue">Node Js,</span>
         </div>
         <div>
-          technology: <span className="blue">Java;</span>
+          technology: <span className="blue">Java,</span>
         </div>
         <div>
-          technology: <span className="blue">Spring Boot;</span>
+          technology: <span className="blue">Spring Boot</span>
         </div>
         {'\u007D'}
       </CodeItem>
