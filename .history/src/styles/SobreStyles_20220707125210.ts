@@ -38,7 +38,6 @@ export const SocialMedia = styled.div`
   align-items: center;
   justify-content: center;
   a {
-    padding: 18px;
   }
   .github {
     color: #000;

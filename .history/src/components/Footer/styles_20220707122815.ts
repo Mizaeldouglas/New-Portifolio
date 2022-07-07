@@ -18,15 +18,11 @@ export const SocialMedia = styled.div`
   a {
     padding-left: 30px;
   }
-  .github {
-    color: #000;
+  .github {}
+  .linkedin{
+    color: #288cb9;
   }
-  .linkedin {
-    color: #007bb6;
-  }
-  .whatsapp {
-    color: #34af23;
-  }
+  .whatsapp{}
 `;
 export const Text = styled.div`
   color: ${({ theme }) => theme.primary};

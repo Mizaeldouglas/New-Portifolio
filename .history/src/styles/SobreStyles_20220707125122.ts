@@ -33,12 +33,10 @@ export const SobreContainer = styled.div`
 `;
 export const SocialMedia = styled.div`
   font-size: 28px;
+  margin-right: -20%;
   padding-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   a {
-    padding: 18px;
+    padding-left: 30px;
   }
   .github {
     color: #000;

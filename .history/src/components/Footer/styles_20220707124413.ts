@@ -18,9 +18,7 @@ export const SocialMedia = styled.div`
   a {
     padding-left: 30px;
   }
-  .github {
-    color: #000;
-  }
+
   .linkedin {
     color: #007bb6;
   }

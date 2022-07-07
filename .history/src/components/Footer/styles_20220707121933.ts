@@ -13,22 +13,13 @@ export const Container = styled.div`
 `;
 export const SocialMedia = styled.div`
   font-size: 28px;
-  margin-right: -20%;
-  padding-top: 20px;
-  a {
-    padding-left: 30px;
-  }
-  .github {
-    color: #000;
-  }
-  .linkedin {
-    color: #007bb6;
-  }
-  .whatsapp {
-    color: #34af23;
-  }
+  margin-right: -100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 `;
 export const Text = styled.div`
   color: ${({ theme }) => theme.primary};
-  margin-left: 15%;
+  margin-left: 10%;
 `;

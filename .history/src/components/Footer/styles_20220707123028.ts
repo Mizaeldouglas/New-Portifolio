@@ -19,13 +19,12 @@ export const SocialMedia = styled.div`
     padding-left: 30px;
   }
   .github {
-    color: #000;
   }
   .linkedin {
     color: #007bb6;
   }
   .whatsapp {
-    color: #34af23;
+    color: #34af2;
   }
 `;
 export const Text = styled.div`

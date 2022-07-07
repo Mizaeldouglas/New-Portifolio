@@ -31,22 +31,4 @@ export const SobreContainer = styled.div`
     }
   }
 `;
-export const SocialMedia = styled.div`
-  font-size: 28px;
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a {
-    padding: 18px;
-  }
-  .github {
-    color: #000;
-  }
-  .linkedin {
-    color: #007bb6;
-  }
-  .whatsapp {
-    color: #34af23;
-  }
-`;
+export const SocialMedia = styled.div``;

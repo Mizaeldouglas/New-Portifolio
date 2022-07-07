@@ -14,18 +14,9 @@ export const Container = styled.div`
 export const SocialMedia = styled.div`
   font-size: 28px;
   margin-right: -20%;
-  padding-top: 20px;
-  a {
+  a{
     padding-left: 30px;
-  }
-  .github {
-    color: #000;
-  }
-  .linkedin {
-    color: #007bb6;
-  }
-  .whatsapp {
-    color: #34af23;
+    margin-top: 50px;
   }
 `;
 export const Text = styled.div`

@@ -1,10 +1,5 @@
 import Head from 'next/head';
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineWhatsApp
-} from 'react-icons/ai';
-import { SobreContainer, SocialMedia } from '../../styles/SobreStyles';
+import { SobreContainer } from '../../styles/SobreStyles';
 
 export default function Sobre() {
   return (
