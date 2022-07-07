@@ -46,7 +46,7 @@ export default function Project({ projeto }: ProjetosProps) {
       <main>
         <p>{projeto.description}</p>
         <button type="button">
-          <a href={projeto.link}>Ver Projeto Online</a>
+          <a href="#">Ver Projeto Online</a>
         </button>
       </main>
     </ProjectContainer>
@@ -82,7 +82,6 @@ export const getStaticProps: GetStaticProps = async context => {
     title: response.data.title,
     type: response.data.type,
     description: response.data.Descripton,
-    link: response.data.ProjectOnline.link_type,
     thumbnail: response.data.Thumbmail.url
   };
 

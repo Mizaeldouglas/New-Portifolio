@@ -1,14 +1,9 @@
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
-import { useEffect } from 'react';
-import Aos from 'aos';
-import { HomeContainer } from '../styles/HomeStyles';
-import HomeHero from '../components/HomeHero';
-import { Project } from '../components/Project';
-import { getPrismicClient } from '../services/prismic';
-import 'aos/dist/aos.css';
-// eslint-disable-next-line import/order
 import Head from 'next/head';
+import { ProjectItem } from '../../components/ProjectItem';
+import { getPrismicClient } from '../../services/prismic';
+import { ProjetosContainer } from '../../styles/ProjetosStyles';
 
 interface IProjeto {
   slug: string;
@@ -16,20 +11,16 @@ interface IProjeto {
   type: string;
   description: string;
   thumbnail: string;
-  link: string;
 }
-interface HomeProps {
+interface ProjetosProps {
   projetos: IProjeto[];
 }
 
-export default function Home({ projetos }: HomeProps) {
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  }, []);
+export default function Projetos({ projetos }: ProjetosProps) {
   return (
-    <HomeContainer>
+    <ProjetosContainer>
       <Head>
-        <title>Home | Meu portfólio</title>
+        <title>Projetos | Meu portfólio</title>
         <meta
           name="description"
           content="Sou um desenvolvedor Full-stack e aqui apresento alguns projetos desenvolvidos por mim!"
@@ -44,10 +35,16 @@ export default function Home({ projetos }: HomeProps) {
         />
       </Head>
       <main className="container">
-        <HomeHero />
-        <Project projetos={projetos} />
+        {projetos.map(projeto => (
+          <ProjectItem
+            title={projeto.title}
+            type={projeto.type}
+            slug={projeto.slug}
+            imgUrl={projeto.thumbnail}
+          />
+        ))}
       </main>
-    </HomeContainer>
+    </ProjetosContainer>
   );
 }
 
@@ -63,7 +60,6 @@ export const getStaticProps: GetStaticProps = async () => {
     title: item.data.title,
     type: item.data.type,
     description: item.data.Descripton,
-    link: item.data.ProjectOnline.link_type,
     thumbnail: item.data.Thumbmail.url
   }));
 

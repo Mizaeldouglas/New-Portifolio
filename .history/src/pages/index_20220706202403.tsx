@@ -15,8 +15,8 @@ interface IProjeto {
   title: string;
   type: string;
   description: string;
-  thumbnail: string;
   link: string;
+  thumbnail: string;
 }
 interface HomeProps {
   projetos: IProjeto[];
@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async () => {
     title: item.data.title,
     type: item.data.type,
     description: item.data.Descripton,
-    link: item.data.ProjectOnline.link_type,
+    link: item.data.link.url,
     thumbnail: item.data.Thumbmail.url
   }));
 

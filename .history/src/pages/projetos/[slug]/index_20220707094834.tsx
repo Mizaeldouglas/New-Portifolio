@@ -77,18 +77,20 @@ export const getStaticProps: GetStaticProps = async context => {
 
   const response = await prismic.getByUID('projetos', String(slug), {});
 
-  const projeto = {
-    slug: response.uid,
-    title: response.data.title,
-    type: response.data.type,
-    description: response.data.Descripton,
-    link: response.data.ProjectOnline.link_type,
-    thumbnail: response.data.Thumbmail.url
-  };
+  // const projeto = {
+  //   slug: response.uid,
+  //   title: response.data.title,
+  //   type: response.data.type,
+  //   description: response.data.Descripton,
+  //   link: response.data.link.url,
+  //   thumbnail: response.data.Thumbmail.url
+  // };
+
+  console.log(response)
 
   return {
     props: {
-      projeto
+     // projeto
     },
     revalidate: 86400
   };

@@ -82,9 +82,11 @@ export const getStaticProps: GetStaticProps = async context => {
     title: response.data.title,
     type: response.data.type,
     description: response.data.Descripton,
-    link: response.data.ProjectOnline.link_type,
+    link: response.data.ProjectOnline.url,
     thumbnail: response.data.Thumbmail.url
   };
+
+
 
   return {
     props: {
