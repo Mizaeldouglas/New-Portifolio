@@ -1,16 +1,17 @@
 // import Prismic from '@prismicio/client';
 // import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
 import { Container } from './styles';
 import NavLink from './NavLink';
+import { useRouter } from 'next/router';
 // import { getPrismicClient } from '../../services/prismic';
 
 interface Props {
+  title: string;
   path: string;
   includes?: boolean;
 }
 
-export default function Header({ path, includes = false }: Props) {
+export default function Header({ title, path, includes = false }: Props) {
   const router = useRouter();
 
   function verifyIfIsActive() {
@@ -23,13 +24,13 @@ export default function Header({ path, includes = false }: Props) {
   const isActive = verifyIfIsActive();
 
   return (
-    <Container isActive={isActive}>
+    <Container sActive={isActive}>
       <ul>
         <NavLink title="Home" path="/" />
         <NavLink title="Projetos" path="/projetos" includes />
         <NavLink title="Sobre Mim" path="/sobre" />
       </ul>
-      {/* <div className="curriculo">
+      <div className="curriculo">
         <a
           href="https://drive.google.com/file/d/16IAsA4cZ0Kd_te4g5VwCkg7sgIgf4Kru/view?usp=sharing"
           target="_blank"
@@ -37,7 +38,7 @@ export default function Header({ path, includes = false }: Props) {
         >
           Download CV
         </a>
-      </div> */}
+      </div>
     </Container>
   );
 }

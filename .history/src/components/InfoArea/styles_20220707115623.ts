@@ -42,7 +42,7 @@ export const CodeItem = styled.pre`
   .blue {
     color: #2a6f97;
   }
-  .blue a {
+  .blue a{
     color: #2a6f97;
   }
   .comment {

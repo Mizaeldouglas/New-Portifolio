@@ -21,12 +21,10 @@ export default function navLink({ title, path, includes = false }: Props) {
   const isActive = verifyIfIsActive();
 
   return (
-    <>
-      <NavLinkContainer isActive={isActive}>
-        <Link href={path}>
-          <a>{title}</a>
-        </Link>
-      </NavLinkContainer>
-    </>
+    <NavLinkContainer isActive={isActive}>
+      <Link href={path}>
+        <a>{title}</a>
+      </Link>
+    </NavLinkContainer>
   );
 }

@@ -5,7 +5,7 @@ interface NavProps {
   isActive: boolean;
 }
 
-export const Container = styled.header<NavProps>`
+export const Container = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,9 +18,8 @@ export const Container = styled.header<NavProps>`
     gap: 2rem;
     align-items: center;
   }
-  a {
-    display: flex;
-    margin-left: 40px;
+  .curriculo {
+    a {
     text-transform: uppercase;
     color: ${props =>
       props.isActive ? props.theme.primary : props.theme.textHighlight};
@@ -31,6 +30,7 @@ export const Container = styled.header<NavProps>`
           ? lighten(0.2, props.theme.primary)
           : lighten(0.2, props.theme.textHighlight)};
     }
+  }
   }
 `;
 export const NavLinkContainer = styled.li<NavProps>`

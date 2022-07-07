@@ -1,0 +1,11 @@
+{
+  "id": "1b1c6110-f0e9-4038-86fa-14b80d7aca3e",
+  "uid": "quisquam-pariatur-aut",
+  "type": "currirculo",
+  "data": {
+    "curriculo": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    }
+  }
+}

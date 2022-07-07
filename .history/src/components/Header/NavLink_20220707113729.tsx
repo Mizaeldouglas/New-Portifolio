@@ -21,12 +21,17 @@ export default function navLink({ title, path, includes = false }: Props) {
   const isActive = verifyIfIsActive();
 
   return (
-    <>
-      <NavLinkContainer isActive={isActive}>
-        <Link href={path}>
-          <a>{title}</a>
-        </Link>
-      </NavLinkContainer>
-    </>
+    <NavLinkContainer isActive={isActive}>
+      <Link href={path}>
+        <a>{title}</a>
+      </Link>
+      <a
+        href="https://drive.google.com/file/d/16IAsA4cZ0Kd_te4g5VwCkg7sgIgf4Kru/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Download CV
+      </a>
+    </NavLinkContainer>
   );
 }

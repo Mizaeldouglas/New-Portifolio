@@ -1,11 +1,11 @@
 {
-  "id": "a410d3f2-cc89-4bbd-8af3-74d623a34c70",
-  "uid": "quae-ut-perspiciatis",
+  "id": "b56f17be-f318-4c80-931a-0b354e1f184e",
+  "uid": "aut-soluta-et",
   "type": "curriculo",
   "data": {
-    "curriculo": {
+    "link": {
       "link_type": "Web",
-      "url": "http://google.com"
+      "url": "https://prismic.io"
     }
   }
 }

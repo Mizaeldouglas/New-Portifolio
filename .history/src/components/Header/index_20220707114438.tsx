@@ -6,6 +6,7 @@ import NavLink from './NavLink';
 // import { getPrismicClient } from '../../services/prismic';
 
 interface Props {
+  title: string;
   path: string;
   includes?: boolean;
 }
@@ -29,7 +30,7 @@ export default function Header({ path, includes = false }: Props) {
         <NavLink title="Projetos" path="/projetos" includes />
         <NavLink title="Sobre Mim" path="/sobre" />
       </ul>
-      {/* <div className="curriculo">
+      <div className="curriculo">
         <a
           href="https://drive.google.com/file/d/16IAsA4cZ0Kd_te4g5VwCkg7sgIgf4Kru/view?usp=sharing"
           target="_blank"
@@ -37,7 +38,7 @@ export default function Header({ path, includes = false }: Props) {
         >
           Download CV
         </a>
-      </div> */}
+      </div>
     </Container>
   );
 }

@@ -1,0 +1,25 @@
+{
+  "id": "currirculo",
+  "label": "currirculo",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "curriculo": {
+        "type": "Link",
+        "config": {
+          "label": "curriculo",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

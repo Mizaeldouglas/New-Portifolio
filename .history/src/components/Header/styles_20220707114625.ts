@@ -20,7 +20,7 @@ export const Container = styled.header<NavProps>`
   }
   a {
     display: flex;
-    margin-left: 40px;
+    right: 30px;
     text-transform: uppercase;
     color: ${props =>
       props.isActive ? props.theme.primary : props.theme.textHighlight};

@@ -1,29 +1,12 @@
 // import Prismic from '@prismicio/client';
 // import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
 import { Container } from './styles';
 import NavLink from './NavLink';
 // import { getPrismicClient } from '../../services/prismic';
 
-interface Props {
-  path: string;
-  includes?: boolean;
-}
-
-export default function Header({ path, includes = false }: Props) {
-  const router = useRouter();
-
-  function verifyIfIsActive() {
-    if (includes) {
-      return router.pathname.includes(path);
-    }
-    return path === router.pathname;
-  }
-
-  const isActive = verifyIfIsActive();
-
+export default function Header() {
   return (
-    <Container isActive={isActive}>
+    <Container>
       <ul>
         <NavLink title="Home" path="/" />
         <NavLink title="Projetos" path="/projetos" includes />
