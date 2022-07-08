@@ -38,7 +38,6 @@ export const Container = styled.div<ContainerProps>`
       h2 {
         color: ${({ theme }) => theme.subTextProject};
         font-size: 1rem;
-        text-shadow: -4px 5px 22px #11172b;
       }
     }
     .overlay {

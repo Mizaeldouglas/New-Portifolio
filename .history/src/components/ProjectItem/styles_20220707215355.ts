@@ -24,21 +24,19 @@ export const Container = styled.div<ContainerProps>`
     &:hover {
       border-color: ${({ theme }) => theme.primary};
       .overlay {
-        opacity: 0.3;
+        opacity: 0.5;
       }
     }
 
     section {
       z-index: 2;
       h1 {
-        color: ${({ theme }) => theme.textLight};
+        color: ${({ theme }) => theme.error};
         font-size: 1.5rem;
-        text-shadow: -4px 5px 22px #11172b;
       }
       h2 {
-        color: ${({ theme }) => theme.subTextProject};
+        color: ${({ theme }) => theme.secondary};
         font-size: 1rem;
-        text-shadow: -4px 5px 22px #11172b;
       }
     }
     .overlay {
@@ -48,7 +46,7 @@ export const Container = styled.div<ContainerProps>`
       width: 100%;
       height: 100%;
       background: ${({ theme }) => theme.gradient};
-      opacity: 0.5;
+      opacity: 0.1;
       transition: 0.5s;
     }
   }

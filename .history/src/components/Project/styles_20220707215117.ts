@@ -30,7 +30,7 @@ export const Container = styled.section`
     transition: none;
 
     &:hover {
-      background: ${({ theme }) => darken(0.8, theme.primary)};
+      background: ${({ theme }) => darken(0.8, theme.textProject)};
     }
     a {
       text-transform: uppercase;

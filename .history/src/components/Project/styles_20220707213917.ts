@@ -30,7 +30,7 @@ export const Container = styled.section`
     transition: none;
 
     &:hover {
-      background: ${({ theme }) => darken(0.8, theme.primary)};
+      background: ${({ theme }) => darken(0.5, theme.primary)};
     }
     a {
       text-transform: uppercase;
@@ -111,7 +111,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
       text-shadow: -4px 5px 22px #11172b;
     }
     h2 {
-      color: ${({ theme }) => theme.subTextProject};
+      color: ${({ theme }) => theme.secondary};
       font-size: 2rem;
       font-weight: 300;
       text-shadow: -4px 5px 22px #11172b;

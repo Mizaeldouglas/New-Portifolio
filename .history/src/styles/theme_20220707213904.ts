@@ -10,8 +10,7 @@ const theme = {
   border: '#313958',
   inputBackground: '#1E253E',
   error: '#d45d5d',
-  textProject: '#1B98E0',
-  subTextProject: '#49AEE9'
+  textProject: '#1B98E0'
 };
 
 export default theme;

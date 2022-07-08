@@ -9,6 +9,6 @@ export const Container = styled.div`
   justify-content: space-evenly;
 `;
 export const Text = styled.div`
-  color: ${({ theme }) => theme.textProject};
-  font-size: 22px;
+  color: ${({ theme }) => theme.primary};
+  font-size: 20px;
 `;

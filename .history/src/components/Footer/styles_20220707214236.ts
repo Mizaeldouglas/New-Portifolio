@@ -10,5 +10,6 @@ export const Container = styled.div`
 `;
 export const Text = styled.div`
   color: ${({ theme }) => theme.textProject};
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: 500;
 `;

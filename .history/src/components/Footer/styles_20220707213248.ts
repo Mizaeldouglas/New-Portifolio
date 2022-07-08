@@ -7,8 +7,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  a {
+    cursor: pointer;
+  }
 `;
 export const Text = styled.div`
-  color: ${({ theme }) => theme.textProject};
-  font-size: 22px;
+  color: ${({ theme }) => theme.primary};
 `;
