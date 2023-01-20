@@ -14,7 +14,7 @@ export function InfoArea() {
           Curriculo:{' '}
           <span className="blue">
             <a
-              href="https://drive.google.com/file/d/16IAsA4cZ0Kd_te4g5VwCkg7sgIgf4Kru/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iwkBpv9OtwiS7yb1sQoRhxOAmFtb-5lI/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
